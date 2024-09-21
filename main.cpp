@@ -2,7 +2,7 @@
 
 #define LOG(x) std::cout << x << std::endl;
 
-extern int s_Variable; // now looking for the variable externally and using the value in static.cpp
+extern int s_Variable; // still looking externally, but now the variable in static.cpp is static again
 
 int main()
 {
