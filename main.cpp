@@ -14,8 +14,8 @@ struct Entity
     }
 };
 
-int Entity::x;
-int Entity::y;
+int Entity::x; // defining something for the linker to link to
+int Entity::y; // being static declares that there is only one instance of the data across all instances of the class/struct
 
 int main()
 {
