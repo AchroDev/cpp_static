@@ -6,6 +6,12 @@
 struct Entity
 {
     int x, y;
+
+    // simple function
+    void Print()
+    {
+        std::cout << x << ", " << y << std::endl;
+    }
 };
 
 int main()
@@ -17,6 +23,9 @@ int main()
 
     // Instantiating the struct using an initializer
     Entity e1 = {5, 8};
+
+    e.Print();
+    e1.Print();
 
     LOG("hi");
     std::cin.get();
