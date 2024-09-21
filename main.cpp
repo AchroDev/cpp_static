@@ -14,6 +14,9 @@ struct Entity
     }
 };
 
+int Entity::x;
+int Entity::y;
+
 int main()
 {
     // Instantiating the struct
