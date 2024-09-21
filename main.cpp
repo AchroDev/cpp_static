@@ -27,6 +27,5 @@ int main()
     e.Print();
     e1.Print();
 
-    LOG("hi");
     std::cin.get();
 }
