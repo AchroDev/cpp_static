@@ -1,2 +1,2 @@
 
-int s_Variable = 5; // This variable is only going to be linked internally
+int s_Variable = 5; // Removing static causes a linker error "multiple definition of `s_Variable';"
