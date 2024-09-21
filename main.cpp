@@ -2,10 +2,22 @@
 
 #define LOG(x) std::cout << x << std::endl;
 
-extern int s_Variable; // still looking externally, but now the variable in static.cpp is static again
+// Using a struct to have default publicity with variables
+struct Entity
+{
+    int x, y;
+};
 
 int main()
 {
-    LOG(s_Variable);
+    // Instantiating the struct
+    Entity e;
+    e.x = 2;
+    e.y = 3;
+
+    // Instantiating the struct using an initializer
+    Entity e1 = {5, 8};
+
+    LOG("hi");
     std::cin.get();
 }
