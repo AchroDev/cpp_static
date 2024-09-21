@@ -2,7 +2,10 @@
 
 #define LOG(x) std::cout << x << std::endl;
 
-int main(){
-    LOG("Hello World!");
+int s_Variable = 10;
+
+int main()
+{
+    LOG(s_Variable);
     std::cin.get();
 }
