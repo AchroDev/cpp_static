@@ -20,19 +20,18 @@ int Entity::y; // being static declares that there is only one instance of the d
 int main()
 {
     // Instantiating the struct
-    Entity e;
+    // Entity e; not needed anymore
     Entity::x = 2; // re-written the correct way
     Entity::y = 3;
 
     // Instantiating the struct using an initializer
     // Entity e1 = {5, 8}; // Due to the variables being static, the initializer will fail.
 
-    Entity e1;     // Since x and y are "no longer" class members the code would need to be written like this.
+    // Entity e1;   // not needed anymore
     Entity::x = 5; // Now that it's re-written you should understand why 5 and 8 print twice.
     Entity::y = 8;
 
-    e.Print();
-    e1.Print();
+    Entity::Print();
 
     std::cin.get();
 }
